@@ -23,7 +23,8 @@ app.use("/uploads", express.static(__dirname));
 
 app.use(
   cors({
-    origin: "*",
+    credentials: true,
+    origin: "https://airbnb-frontend-phi.vercel.app/", 
   })
 );
 
